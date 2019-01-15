@@ -1,0 +1,9 @@
+
+connect('username','password','t3://server_name_ip:port')
+servers=cmo.getServers()
+print "-------------------------------------------------------"
+print "\t"+cmo.getName()+" domain status"
+print "-------------------------------------------------------"
+for server in servers:
+        state(server.getName(),server.getType())
+print "-------------------------------------------------------"
